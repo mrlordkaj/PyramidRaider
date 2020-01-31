@@ -1,0 +1,87 @@
+﻿max 2 xác ướp, 1 bọ cạp, 2 bẫy, 1 cổng
+
+PRE CONFIG
+*************
+Address: cursor = 0x0
+Kích thước map
+===========
+Address: cursor++ (0x1)
+Số lượng map
+===========
+Address: cursor++ (0x2)
+Số lượng xác ướp
+===========
+Address: cursor++ (0x3)
+Số lượng cặp khóa - cổng
+===========
+Address: cursor++ (0x4)
+Số lượng bẫy
+===========
+Address: cursor++ (0x5);
+Số lượng bọ cạp
+===========
+//mapCapacity = mapSize*2 + numMummy + numGate*2 + numTrap + numScorpion + 2 (6*2+1+0*2+0+0+2=15)
+====================================================
+BEGIN MAP
+*************
+//cursor = mapCapacity * (mapId-1) + 0x6 (0x6)
+Address: cursor -> cursor += mapSize (0x6->0xB)
+Description: Các bức tường dọc
+Specification:
+- 1 byte dành cho 1 hàng
+- dữ liệu được đổi sang bit, mô tả bức tường phía bên trái các ô
+- dãy bit đọc từ phải sang trái là trạng thái có hoặc không của các bức tường từ trái sang phải
+===========
+//cursor++
+Address: cursor -> cursor += mapSize (0xC-0x11)
+Description: Các bức tường ngang
+Specification:
+- 1 byte dành cho 1 hàng
+- dữ liệu đổi sang bit, mô tả các bức tường phía trên các ô đó
+- dãy bit đọc từ phải sang trái là trạng thái có hoặc không của các bức tường từ trái sang phải
+===========
+Address: cursor++ (0x12)
+Description: Vị trí cửa ra
+Specification:
+- 1 byte
+- nửa đầu chỉ thứ tự ô (từ trái sang hoặc trên xuống)
+- nửa cuối chỉ hướng (0 trên, 1 trái, 2 phải, 3 dưới)
+- ví dụ: (13) là cổng hướng xuống dưới, ở ô thứ 2 từ trái sang
+===========
+Address: cursor++ (0x13)
+Description: vị trí nhà thám hiểm
+Specification:
+- 1 byte
+- nửa đầu chỉ số hàng
+- nửa cuối chỉ số cột
+Ví dụ: (23) tương ứng hàng 2 cột 3
+===========
+Address: cursor(+1,+2)
+Description: vị trí 1 hoặc 2 xác ướp trắng
+Specification: giống explorer
+===========
+Địa chỉ: cursor(+0,+1)
+Vị trí bọ cạp trắng
+Mô tả dữ liệu: giống explorer
+===========
+Địa chỉ: cursor(+0,+1,+2)
+Vị trí 1 hoặc 2 chiếc bẫy
+Mô tả dữ liệu: giống explorer
+===========
+Địa chỉ: cursor(+0,+1)
+Vị trí của ô bên trên chiếc cổng
+Mô tả dữ liệu: giống explorer
+===========
+Địa chỉ: cursor(+0,+1)
+Vị trí chìa khóa
+Mô tả dữ liệu: giống explorer
+
+
+
+
+
+MAP 8x8
+Giống Map 6x6
+
+Map 10x10
+Tương tự, nhưng dùng 2 byte để ghi tường

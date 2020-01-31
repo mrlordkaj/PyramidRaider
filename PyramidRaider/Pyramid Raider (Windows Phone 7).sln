@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PyramidRaider.WP7", "PyramidRaider.WP7\PyramidRaider.WP7.csproj", "{63402EED-49CC-4F7A-A7B7-E51B2FD131C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PyramidRaiderLib.WP7", "PyramidRaiderLib\PyramidRaiderLib.WP7.csproj", "{101DE905-944E-41A3-BD16-A00D949C2A82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PyramidRaiderContent", "PyramidRaiderContent\PyramidRaiderContent.contentproj", "{90B98BB1-DF74-47F0-A3E9-4C6E4C9843F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkinnedModel.WP7", "SkinnedModel\SkinnedModel.WP7.csproj", "{61F180D4-CD36-4B3C-BDB5-0D85453C7671}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tranquillity.WP7", "Tranquillity\Tranquillity.WP7.csproj", "{6A2325FB-7560-43A3-ADD3-342FAA26383E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Windows Phone = Debug|Windows Phone
+		Release|Windows Phone = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{63402EED-49CC-4F7A-A7B7-E51B2FD131C0}.Debug|Windows Phone.ActiveCfg = Debug|Any CPU
+		{63402EED-49CC-4F7A-A7B7-E51B2FD131C0}.Debug|Windows Phone.Build.0 = Debug|Any CPU
+		{63402EED-49CC-4F7A-A7B7-E51B2FD131C0}.Debug|Windows Phone.Deploy.0 = Debug|Any CPU
+		{63402EED-49CC-4F7A-A7B7-E51B2FD131C0}.Release|Windows Phone.ActiveCfg = Release|Any CPU
+		{63402EED-49CC-4F7A-A7B7-E51B2FD131C0}.Release|Windows Phone.Build.0 = Release|Any CPU
+		{63402EED-49CC-4F7A-A7B7-E51B2FD131C0}.Release|Windows Phone.Deploy.0 = Release|Any CPU
+		{101DE905-944E-41A3-BD16-A00D949C2A82}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{101DE905-944E-41A3-BD16-A00D949C2A82}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{101DE905-944E-41A3-BD16-A00D949C2A82}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{101DE905-944E-41A3-BD16-A00D949C2A82}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{90B98BB1-DF74-47F0-A3E9-4C6E4C9843F2}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{90B98BB1-DF74-47F0-A3E9-4C6E4C9843F2}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{61F180D4-CD36-4B3C-BDB5-0D85453C7671}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{61F180D4-CD36-4B3C-BDB5-0D85453C7671}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{61F180D4-CD36-4B3C-BDB5-0D85453C7671}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{61F180D4-CD36-4B3C-BDB5-0D85453C7671}.Release|Windows Phone.Build.0 = Release|Windows Phone
+		{6A2325FB-7560-43A3-ADD3-342FAA26383E}.Debug|Windows Phone.ActiveCfg = Debug|Windows Phone
+		{6A2325FB-7560-43A3-ADD3-342FAA26383E}.Debug|Windows Phone.Build.0 = Debug|Windows Phone
+		{6A2325FB-7560-43A3-ADD3-342FAA26383E}.Release|Windows Phone.ActiveCfg = Release|Windows Phone
+		{6A2325FB-7560-43A3-ADD3-342FAA26383E}.Release|Windows Phone.Build.0 = Release|Windows Phone
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

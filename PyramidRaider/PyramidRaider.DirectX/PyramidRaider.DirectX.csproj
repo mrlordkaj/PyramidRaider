@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5BE91618-AD10-46DB-8D93-B8F9743F3B88}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PyramidRaider</RootNamespace>
+    <AssemblyName>PyramidRaider</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="..\PyramidRaider\AdventureMap.cs">
+      <Link>AdventureMap.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\Cameras\Camera.cs">
+      <Link>Cameras\Camera.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\Cameras\RotateCamera.cs">
+      <Link>Cameras\RotateCamera.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\Cameras\TargetCamera.cs">
+      <Link>Cameras\TargetCamera.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\Character.cs">
+      <Link>Character.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\ConfirmDialog.cs">
+      <Link>ConfirmDialog.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\Dust.cs">
+      <Link>Dust.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\Enemy.cs">
+      <Link>Enemy.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\Explorer.cs">
+      <Link>Explorer.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\GateSystem.cs">
+      <Link>GateSystem.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\HellGate.cs">
+      <Link>HellGate.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\InstructionScene.cs">
+      <Link>InstructionScene.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\LevelManager.cs">
+      <Link>LevelManager.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\Main.cs">
+      <Link>Main.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\MainMenuScene.cs">
+      <Link>MainMenuScene.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\MenuItem.cs">
+      <Link>MenuItem.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\Mummy.cs">
+      <Link>Mummy.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\OpenitvnGame\Button2D.cs">
+      <Link>OpenitvnGame\Button2D.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\OpenitvnGame\Button3D.cs">
+      <Link>OpenitvnGame\Button3D.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\OpenitvnGame\CModel.cs">
+      <Link>OpenitvnGame\CModel.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\OpenitvnGame\CSkinnedModel.cs">
+      <Link>OpenitvnGame\CSkinnedModel.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\OpenitvnGame\GameScene.cs">
+      <Link>OpenitvnGame\GameScene.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\OpenitvnGame\Helpers\SettingHelper.cs">
+      <Link>OpenitvnGame\Helpers\SettingHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\OpenitvnGame\Resolution.cs">
+      <Link>OpenitvnGame\Resolution.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\OpenitvnGame\SoundController.cs">
+      <Link>OpenitvnGame\SoundController.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\OpenitvnGame\Sprite2D.cs">
+      <Link>OpenitvnGame\Sprite2D.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\OpenitvnGame\XamlGame.cs">
+      <Link>OpenitvnGame\XamlGame.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\PlayContentHolder.cs">
+      <Link>PlayContentHolder.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\PlayScene.cs">
+      <Link>PlayScene.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\PyramidMap.cs">
+      <Link>PyramidMap.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\QuickMenu.cs">
+      <Link>QuickMenu.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\Scorpion.cs">
+      <Link>Scorpion.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\SplashScene.cs">
+      <Link>SplashScene.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\Tranquallity\DustParticleSystem.cs">
+      <Link>Tranquillity\DustParticleSystem.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\Trap.cs">
+      <Link>Trap.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\UndoData.cs">
+      <Link>UndoData.cs</Link>
+    </Compile>
+    <Compile Include="Program.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico" />
+    <None Include="..\PyramidRaider\Adventures\1.dat">
+      <Link>Adventures\1.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Adventures\10.dat">
+      <Link>Adventures\10.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Adventures\11.dat">
+      <Link>Adventures\11.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Adventures\12.dat">
+      <Link>Adventures\12.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Adventures\13.dat">
+      <Link>Adventures\13.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Adventures\14.dat">
+      <Link>Adventures\14.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Adventures\15.dat">
+      <Link>Adventures\15.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Adventures\2.dat">
+      <Link>Adventures\2.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Adventures\3.dat">
+      <Link>Adventures\3.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Adventures\4.dat">
+      <Link>Adventures\4.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Adventures\5.dat">
+      <Link>Adventures\5.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Adventures\6.dat">
+      <Link>Adventures\6.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Adventures\7.dat">
+      <Link>Adventures\7.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Adventures\8.dat">
+      <Link>Adventures\8.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Adventures\9.dat">
+      <Link>Adventures\9.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Mazes\1.dat">
+      <Link>Mazes\1.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Mazes\10.dat">
+      <Link>Mazes\10.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Mazes\11.dat">
+      <Link>Mazes\11.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Mazes\12.dat">
+      <Link>Mazes\12.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Mazes\13.dat">
+      <Link>Mazes\13.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Mazes\14.dat">
+      <Link>Mazes\14.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Mazes\15.dat">
+      <Link>Mazes\15.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Mazes\2.dat">
+      <Link>Mazes\2.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Mazes\3.dat">
+      <Link>Mazes\3.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Mazes\4.dat">
+      <Link>Mazes\4.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Mazes\5.dat">
+      <Link>Mazes\5.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Mazes\6.dat">
+      <Link>Mazes\6.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Mazes\7.dat">
+      <Link>Mazes\7.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Mazes\8.dat">
+      <Link>Mazes\8.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Mazes\9.dat">
+      <Link>Mazes\9.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\rotateCCW.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Images\rotateCW.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Save\settings.dat">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Mazes\*\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Adventures\*\*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Library\MonoGame-develop\MonoGame.Framework\MonoGame.Framework.Windows.csproj">
+      <Project>{7DE47032-A904-4C29-BD22-2D235E8D91BA}</Project>
+      <Name>MonoGame.Framework.Windows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PyramidRaiderLib\PyramidRaiderLib.DirectX.csproj">
+      <Project>{BCFC494F-A8E9-48D1-87E6-D7D76B5D41E1}</Project>
+      <Name>PyramidRaiderLib.DirectX</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SkinnedModel\SkinnedModel.DirectX.csproj">
+      <Project>{390FBEBC-48AF-4DD1-9CE5-608021B6F3A6}</Project>
+      <Name>SkinnedModel.DirectX</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tranquillity\Tranquillity.DirectX.csproj">
+      <Project>{6860D277-68A4-4A7C-8EA2-6A216B28097E}</Project>
+      <Name>Tranquillity.DirectX</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

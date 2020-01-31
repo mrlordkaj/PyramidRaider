@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{63402EED-49CC-4F7A-A7B7-E51B2FD131C0}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PyramidRaider</RootNamespace>
+    <AssemblyName>PyramidRaider</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>PyramidRaider_$(Configuration).xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>PyramidRaider.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;SILVERLIGHT;WINDOWS_PHONE;WP7</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE;WP7</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Inneractive.Ad, Version=1.1.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Library\WP7\Inneractive.Ad.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="Microsoft.Xna.Framework" />
+    <Reference Include="Microsoft.Xna.Framework.Game" />
+    <Reference Include="Microsoft.Xna.Framework.GamerServices" />
+    <Reference Include="Microsoft.Xna.Framework.Graphics" />
+    <Reference Include="Microsoft.Xna.Framework.Input.Touch" />
+    <Reference Include="Microsoft.Xna.Framework.Interop" />
+    <Reference Include="mscorlib.extensions" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\PyramidRaider\AdventureMap.cs">
+      <Link>AdventureMap.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\Cameras\Camera.cs">
+      <Link>Cameras\Camera.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\Cameras\RotateCamera.cs">
+      <Link>Cameras\RotateCamera.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\Cameras\TargetCamera.cs">
+      <Link>Cameras\TargetCamera.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\Character.cs">
+      <Link>Character.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\Dust.cs">
+      <Link>Dust.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\Enemy.cs">
+      <Link>Enemy.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\Explorer.cs">
+      <Link>Explorer.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\GateSystem.cs">
+      <Link>GateSystem.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\HellGate.cs">
+      <Link>HellGate.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\InstructionScene.cs">
+      <Link>InstructionScene.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\LeaderboardScene.cs">
+      <Link>LeaderboardScene.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\LevelManager.cs">
+      <Link>LevelManager.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\Localize.cs">
+      <Link>Localize.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\Main.cs">
+      <Link>Main.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\MainMenuScene.cs">
+      <Link>MainMenuScene.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\MenuItem.cs">
+      <Link>MenuItem.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\Mummy.cs">
+      <Link>Mummy.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\OpenitvnGame\Button2D.cs">
+      <Link>OpenitvnGame\Button2D.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\OpenitvnGame\Button3D.cs">
+      <Link>OpenitvnGame\Button3D.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\OpenitvnGame\CModel.cs">
+      <Link>OpenitvnGame\CModel.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\OpenitvnGame\CSkinnedModel.cs">
+      <Link>OpenitvnGame\CSkinnedModel.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\OpenitvnGame\GameScene.cs">
+      <Link>OpenitvnGame\GameScene.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\OpenitvnGame\Helpers\FeedbackHelper.cs">
+      <Link>OpenitvnGame\Helpers\FeedbackHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\OpenitvnGame\Helpers\SettingHelper.cs">
+      <Link>OpenitvnGame\Helpers\SettingHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\OpenitvnGame\Helpers\StringHelper.cs">
+      <Link>OpenitvnGame\Helpers\StringHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\OpenitvnGame\ILeaderboardCaller.cs">
+      <Link>OpenitvnGame\ILeaderboardCaller.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\OpenitvnGame\Leaderboard.cs">
+      <Link>OpenitvnGame\Leaderboard.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\OpenitvnGame\Math\MD5.cs">
+      <Link>OpenitvnGame\Math\MD5.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\OpenitvnGame\Resolution.cs">
+      <Link>OpenitvnGame\Resolution.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\OpenitvnGame\SoundController.cs">
+      <Link>OpenitvnGame\SoundController.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\OpenitvnGame\Sprite2D.cs">
+      <Link>OpenitvnGame\Sprite2D.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\OpenitvnGame\XamlGame.cs">
+      <Link>OpenitvnGame\XamlGame.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\PlayContentHolder.cs">
+      <Link>PlayContentHolder.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\PlayScene.cs">
+      <Link>PlayScene.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\Properties\AssemblyInfo.cs">
+      <Link>Properties\AssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\PyramidMap.cs">
+      <Link>PyramidMap.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\QuickMenu.cs">
+      <Link>QuickMenu.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\Scorpion.cs">
+      <Link>Scorpion.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\SplashScene.cs">
+      <Link>SplashScene.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\Tranquallity\DustParticleSystem.cs">
+      <Link>Tranquillity\DustParticleSystem.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\Trap.cs">
+      <Link>Trap.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\UIDialog.cs">
+      <Link>UIDialog.cs</Link>
+    </Compile>
+    <Compile Include="..\PyramidRaider\UndoData.cs">
+      <Link>UndoData.cs</Link>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AppServiceProvider.cs">
+      <DependentUpon>GamePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ExitPage.xaml.cs">
+      <DependentUpon>ExitPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="GamePage.xaml.cs">
+      <DependentUpon>GamePage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\PyramidRaider\Adventures\1.dat">
+      <Link>Adventures\1.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Adventures\10.dat">
+      <Link>Adventures\10.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Adventures\11.dat">
+      <Link>Adventures\11.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Adventures\12.dat">
+      <Link>Adventures\12.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Adventures\13.dat">
+      <Link>Adventures\13.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Adventures\14.dat">
+      <Link>Adventures\14.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Adventures\15.dat">
+      <Link>Adventures\15.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Adventures\2.dat">
+      <Link>Adventures\2.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Adventures\3.dat">
+      <Link>Adventures\3.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Adventures\4.dat">
+      <Link>Adventures\4.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Adventures\5.dat">
+      <Link>Adventures\5.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Adventures\6.dat">
+      <Link>Adventures\6.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Adventures\7.dat">
+      <Link>Adventures\7.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Adventures\8.dat">
+      <Link>Adventures\8.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Adventures\9.dat">
+      <Link>Adventures\9.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Mazes\1.dat">
+      <Link>Mazes\1.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Mazes\10.dat">
+      <Link>Mazes\10.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Mazes\11.dat">
+      <Link>Mazes\11.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Mazes\12.dat">
+      <Link>Mazes\12.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Mazes\13.dat">
+      <Link>Mazes\13.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Mazes\14.dat">
+      <Link>Mazes\14.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Mazes\15.dat">
+      <Link>Mazes\15.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Mazes\2.dat">
+      <Link>Mazes\2.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Mazes\3.dat">
+      <Link>Mazes\3.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Mazes\4.dat">
+      <Link>Mazes\4.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Mazes\5.dat">
+      <Link>Mazes\5.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Mazes\6.dat">
+      <Link>Mazes\6.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Mazes\7.dat">
+      <Link>Mazes\7.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Mazes\8.dat">
+      <Link>Mazes\8.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\PyramidRaider\Mazes\9.dat">
+      <Link>Mazes\9.dat</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Mazes\**\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Adventures\**\**">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="ExitPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="GamePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SplashScreenImage.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PyramidRaiderLib\PyramidRaiderLib.WP7.csproj">
+      <Name>PyramidRaiderLib.WP7</Name>
+      <Project>{101DE905-944E-41A3-BD16-A00D949C2A82}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SkinnedModel\SkinnedModel.WP7.csproj">
+      <Project>{61F180D4-CD36-4B3C-BDB5-0D85453C7671}</Project>
+      <Name>SkinnedModel.WP7</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tranquillity\Tranquillity.WP7.csproj">
+      <Project>{6A2325FB-7560-43A3-ADD3-342FAA26383E}</Project>
+      <Name>Tranquillity.WP7</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

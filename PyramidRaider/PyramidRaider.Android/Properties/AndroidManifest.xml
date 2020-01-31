@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" package="com.openitvn.pyramidraider" android:versionCode="1" android:versionName="1.4.0.0">
+	<uses-sdk android:minSdkVersion="10" android:targetSdkVersion="17" />
+	<application android:label="Pyramid Raider" android:icon="@drawable/icon">
+		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+		<activity android:name="mobi.vserv.android.ads.VservAdManager" android:launchMode="singleTop" android:multiprocess="true" android:process=":vserv" android:windowSoftInputMode="adjustPan" />
+		<activity android:name="mobi.vserv.org.ormma.view.Browser" android:windowSoftInputMode="adjustPan"></activity>
+		<activity android:name="mobi.vserv.org.ormma.view.OrmmaActionHandler" android:windowSoftInputMode="adjustPan"></activity>
+	</application>
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+</manifest>

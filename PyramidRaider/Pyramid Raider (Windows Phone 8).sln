@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PyramidRaiderContent", "PyramidRaiderContent\PyramidRaiderContent.contentproj", "{90B98BB1-DF74-47F0-A3E9-4C6E4C9843F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PyramidRaiderLib.WP7", "PyramidRaiderLib\PyramidRaiderLib.WP7.csproj", "{101DE905-944E-41A3-BD16-A00D949C2A82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SkinnedModel.WP8", "SkinnedModel\SkinnedModel.WP8.csproj", "{1CBABF96-8E09-4A90-8460-FCFCFC4FE485}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PyramidRaider.WP8", "PyramidRaider.WP8\PyramidRaider.WP8.csproj", "{E140EFCC-AD66-4214-98D9-7A0A1868A468}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tranquillity.WP8", "Tranquillity\Tranquillity.WP8.csproj", "{CD8B58C6-5C6E-40D8-B081-5F34436E30A4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90B98BB1-DF74-47F0-A3E9-4C6E4C9843F2}.Debug|ARM.ActiveCfg = Debug|Windows Phone
+		{90B98BB1-DF74-47F0-A3E9-4C6E4C9843F2}.Debug|x86.ActiveCfg = Debug|Windows Phone
+		{90B98BB1-DF74-47F0-A3E9-4C6E4C9843F2}.Release|ARM.ActiveCfg = Release|Windows Phone
+		{90B98BB1-DF74-47F0-A3E9-4C6E4C9843F2}.Release|x86.ActiveCfg = Release|Windows Phone
+		{101DE905-944E-41A3-BD16-A00D949C2A82}.Debug|ARM.ActiveCfg = Debug|Windows Phone
+		{101DE905-944E-41A3-BD16-A00D949C2A82}.Debug|ARM.Build.0 = Debug|Windows Phone
+		{101DE905-944E-41A3-BD16-A00D949C2A82}.Debug|x86.ActiveCfg = Debug|Windows Phone
+		{101DE905-944E-41A3-BD16-A00D949C2A82}.Debug|x86.Build.0 = Debug|Windows Phone
+		{101DE905-944E-41A3-BD16-A00D949C2A82}.Release|ARM.ActiveCfg = Release|Windows Phone
+		{101DE905-944E-41A3-BD16-A00D949C2A82}.Release|ARM.Build.0 = Release|Windows Phone
+		{101DE905-944E-41A3-BD16-A00D949C2A82}.Release|x86.ActiveCfg = Release|Windows Phone
+		{101DE905-944E-41A3-BD16-A00D949C2A82}.Release|x86.Build.0 = Release|Windows Phone
+		{1CBABF96-8E09-4A90-8460-FCFCFC4FE485}.Debug|ARM.ActiveCfg = Debug|ARM
+		{1CBABF96-8E09-4A90-8460-FCFCFC4FE485}.Debug|ARM.Build.0 = Debug|ARM
+		{1CBABF96-8E09-4A90-8460-FCFCFC4FE485}.Debug|x86.ActiveCfg = Debug|x86
+		{1CBABF96-8E09-4A90-8460-FCFCFC4FE485}.Debug|x86.Build.0 = Debug|x86
+		{1CBABF96-8E09-4A90-8460-FCFCFC4FE485}.Release|ARM.ActiveCfg = Release|ARM
+		{1CBABF96-8E09-4A90-8460-FCFCFC4FE485}.Release|ARM.Build.0 = Release|ARM
+		{1CBABF96-8E09-4A90-8460-FCFCFC4FE485}.Release|x86.ActiveCfg = Release|x86
+		{1CBABF96-8E09-4A90-8460-FCFCFC4FE485}.Release|x86.Build.0 = Release|x86
+		{E140EFCC-AD66-4214-98D9-7A0A1868A468}.Debug|ARM.ActiveCfg = Debug|ARM
+		{E140EFCC-AD66-4214-98D9-7A0A1868A468}.Debug|ARM.Build.0 = Debug|ARM
+		{E140EFCC-AD66-4214-98D9-7A0A1868A468}.Debug|ARM.Deploy.0 = Debug|ARM
+		{E140EFCC-AD66-4214-98D9-7A0A1868A468}.Debug|x86.ActiveCfg = Debug|x86
+		{E140EFCC-AD66-4214-98D9-7A0A1868A468}.Debug|x86.Build.0 = Debug|x86
+		{E140EFCC-AD66-4214-98D9-7A0A1868A468}.Debug|x86.Deploy.0 = Debug|x86
+		{E140EFCC-AD66-4214-98D9-7A0A1868A468}.Release|ARM.ActiveCfg = Release|ARM
+		{E140EFCC-AD66-4214-98D9-7A0A1868A468}.Release|ARM.Build.0 = Release|ARM
+		{E140EFCC-AD66-4214-98D9-7A0A1868A468}.Release|ARM.Deploy.0 = Release|ARM
+		{E140EFCC-AD66-4214-98D9-7A0A1868A468}.Release|x86.ActiveCfg = Release|x86
+		{E140EFCC-AD66-4214-98D9-7A0A1868A468}.Release|x86.Build.0 = Release|x86
+		{E140EFCC-AD66-4214-98D9-7A0A1868A468}.Release|x86.Deploy.0 = Release|x86
+		{CD8B58C6-5C6E-40D8-B081-5F34436E30A4}.Debug|ARM.ActiveCfg = Debug|ARM
+		{CD8B58C6-5C6E-40D8-B081-5F34436E30A4}.Debug|ARM.Build.0 = Debug|ARM
+		{CD8B58C6-5C6E-40D8-B081-5F34436E30A4}.Debug|x86.ActiveCfg = Debug|x86
+		{CD8B58C6-5C6E-40D8-B081-5F34436E30A4}.Debug|x86.Build.0 = Debug|x86
+		{CD8B58C6-5C6E-40D8-B081-5F34436E30A4}.Release|ARM.ActiveCfg = Release|ARM
+		{CD8B58C6-5C6E-40D8-B081-5F34436E30A4}.Release|ARM.Build.0 = Release|ARM
+		{CD8B58C6-5C6E-40D8-B081-5F34436E30A4}.Release|x86.ActiveCfg = Release|x86
+		{CD8B58C6-5C6E-40D8-B081-5F34436E30A4}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

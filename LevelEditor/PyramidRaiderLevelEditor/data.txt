@@ -1,0 +1,12 @@
+﻿mazee[i][j][0]
+
+- khởi tạo trọng số của các ô là 0
+- nếu ô có tường bên trái, cộng trọng số thêm 1 đơn vị
+- nếu ô có tường bên dưới, cộng trọng số thêm 2 đơn vị
+- nếu ô có tường bên phải, cộng trọng số thêm 4 đơn vị
+- nếu ô có tướng bên trên, cộng trọng số thêm 8 đơn vị
+- nếu ô có bẫy, cộng trọng số ô thêm 16 đơn vị
+- nếu ô có chìa khóa, cộng trọng số ô thêm 32 đơn vị
+
+
+- nếu ô là lối thoát hoặc có nhân vật, bẫy, trừ đi trọng số của các bức tường biên
